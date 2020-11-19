@@ -8,8 +8,22 @@ const sidesPresets = document.getElementById('sidesPresets')
 let customInput = document.getElementById('customInput')
 let rollResult = document.getElementById('rollResult')
 let allPresetBtns = document.querySelectorAll('.preset')
+let spinTarget = document.getElementById('spinTarget')
+let frontFace = document.getElementById('frontFace')
+let randArrayNum = 1
+let myArray = [1, 2, 3, 4, 5, 6]
+
 
 // functions
+let changeNumber = () => {
+    randArrayNum = myArray[Math.floor(Math.random() * myArray.length)];
+    frontFace.innerHTML = randArrayNum
+}
+
+let reset = () => {
+    location.reload()
+}
+
 sidesPresets.addEventListener('click', (event) => {
     presetValue = parseInt(event.target.innerHTML)
     customInput.placeholder = "Using a preset above"
@@ -32,6 +46,18 @@ let genRandomNum = () => {
         numOfSides = presetValue
     }
     diceThrowResult = Math.ceil(Math.random() * numOfSides)
-    rollResult.innerHTML = diceThrowResult
+    if (typeof diceThrowResult !== Number) {
+
+    }
+    // animation functionality
+    spinTarget.classList.add('box')
+    let callChangeNum = setInterval(() => {
+        changeNumber()
+    }, 100)
+    setTimeout(() => {
+        clearInterval(callChangeNum)
+        frontFace.innerHTML = diceThrowResult
+        spinTarget.classList.remove('box')
+    }, 2400);
 
 }
