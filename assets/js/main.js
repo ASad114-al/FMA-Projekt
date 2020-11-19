@@ -20,9 +20,7 @@ let changeNumber = () => {
     frontFace.innerHTML = randArrayNum
 }
 
-let reset = () => {
-    location.reload()
-}
+
 
 sidesPresets.addEventListener('click', (event) => {
     presetValue = parseInt(event.target.innerHTML)

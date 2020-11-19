@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;600;700&display=swap');
 
 // reset styles
 *
@@ -8,6 +9,10 @@
     box-sizing: border-box
 h1
     margin: 0
+    color: white
+    font-family: 'Bitter', serif
+    font-weight: 700
+    font-size: 3rem
 p
     margin: 0
 a
@@ -32,8 +37,8 @@ cite
 
 // variables Convert to hsl here: https://www.w3schools.com/colors/colors_converter.asp
 $primary: hsl(208, 63%, 27%)
-$secondary: hsl(194, 47%, 60%)
-$accent: hsl(0, 79%, 70%)
+$secondary: hsl(100, 96%, 32%)
+$accent: hsl(0, 100%, 25%)
 $neutral: hsl(228, 33%, 97%)
 
 // global styles
@@ -91,7 +96,7 @@ body
 .container
     margin: 0 30%
 .active-button
-    background: coral 
+    background: $secondary 
     color: white 
 #rollResult
     font-weight: 700
@@ -103,3 +108,20 @@ img
 
 body
     background: url("../img/cardhands.png") center center / cover no-repeat scroll
+
+.roll 
+    background-color: $secondary
+    color: white
+    &:hover
+        background: darken($secondary,7 )
+    padding: 12px 34px
+
+
+small
+    color: white
+    font-family: 'Bitter', serif
+    font-weight: 300     
+
+#sidesPresets, form
+    margin-bottom: 26px
+

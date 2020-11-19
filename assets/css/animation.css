@@ -19,8 +19,8 @@
     width: 160px;
     height: 160px;
     border-radius: 8px;
-    box-shadow: inset 0px 0px 40px #666;
-    background: darkblue;
+    box-shadow: inset 0px 0px 40px hsl(0, 100%, 45%);
+    background: hsl(0, 100%, 25%);
     color: white;
     text-align: center;
     line-height: 2em;
@@ -75,6 +75,7 @@
     0% {
       transform: rotate(2000deg);
       margin-left: 1500px;
+      
     }
     100% {
       transform: rotate();
