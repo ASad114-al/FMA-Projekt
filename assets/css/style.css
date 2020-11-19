@@ -74,10 +74,6 @@ body {
   margin: 8px 0;
 }
 
-.btn:hover {
-  background: #dde0ee;
-}
-
 #customInput {
   width: 75%;
   padding: 12px 20px;
@@ -103,5 +99,10 @@ body {
 #rollResult {
   font-weight: 700;
   font-size: 3rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */
