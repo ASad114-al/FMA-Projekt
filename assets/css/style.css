@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300600700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +13,8 @@ h1 {
   font-family: 'Bitter', serif;
   font-weight: 700;
   font-size: 3rem;
+  letter-spacing: 3px;
+  word-spacing: 7px;
 }
 
 p {
@@ -51,9 +53,11 @@ cite {
 }
 
 body {
-  margin-top: 50px;
+  padding-top: 50px;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  background: url("../img/cardhands.png") center center/cover no-repeat scroll;
+  min-height: 100vh;
 }
 
 .btn {
@@ -111,14 +115,11 @@ img {
   height: auto;
 }
 
-body {
-  background: url("../img/cardhands.png") center center/cover no-repeat scroll;
-}
-
 .roll {
   background-color: #37a003;
   color: white;
   padding: 12px 34px;
+  margin-bottom: 60px;
 }
 
 .roll:hover {
@@ -127,7 +128,7 @@ body {
 
 small {
   color: white;
-  font-family: 'Bitter', serif;
+  font-family: 'Open Sans', serif;
   font-weight: 300;
 }
 
@@ -135,23 +136,22 @@ small {
   margin-bottom: 26px;
 }
 
-html {
-  background-color: #050505;
+.swirl {
+  width: 70%;
 }
 
-/* On screens that are 992px or less, change to one column. */
 @media only screen and (max-width: 802px) {
   .container {
     margin: 0;
   }
   #customInput {
-    width: 50%
+    width: 50%;
   }
   .roll {
-    width: 50%
+    width: 50%;
   }
   #sidesPresets {
-    margin: 0 7%
+    margin: 0 7%;
   }
 }
 
@@ -160,14 +160,13 @@ html {
     margin: 0;
   }
   #customInput {
-    width: 75%
+    width: 75%;
   }
   .roll {
-    width: 75%
+    width: 75%;
   }
   #sidesPresets {
-    margin: 0 7%
+    margin: 0 7%;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

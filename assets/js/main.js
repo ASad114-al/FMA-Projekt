@@ -23,13 +23,16 @@ let changeNumber = () => {
 
 
 sidesPresets.addEventListener('click', (event) => {
+    console.log(event);
     presetValue = parseInt(event.target.innerHTML)
     customInput.placeholder = "Using a preset above"
     
     allPresetBtns.forEach((item) => {
         item.classList.remove('active-button')
     }) 
-    event.target.classList.add('active-button')
+    if (event.target.localName == "a") {
+        event.target.classList.add('active-button')
+    }
 })
 
 let resetPresetValue = () => {
