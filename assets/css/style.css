@@ -105,4 +105,8 @@ img {
   width: 100%;
   height: auto;
 }
+
+body {
+  background: url("../img/cardhands.png") center center/cover no-repeat scroll;
+}
 /*# sourceMappingURL=style.css.map */
